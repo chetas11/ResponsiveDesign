@@ -10,23 +10,38 @@ const Phone = document.getElementById("phone")
 
 Form.addEventListener("submit", function(e){
     e.preventDefault();
-     let flag = false
+
+    let flag = false
 
     if(!Name.value){       
         flag = true;
-    }else if(!Address1.value){        
+    } 
+    
+    if(!Address1.value){        
         flag = true;
-    }else if(!Address2.value){       
+    }
+    
+    if(!Address2.value){       
         flag = true;
-    }else if(!City.value){       
+    } 
+    
+    if(!City.value){       
        flag = true;
-    }else if(!State.value){       
+    } 
+    
+    if(!State.value){       
         flag = true;
-    }else if(!Zip.value){       
+    }
+    
+    if(!Zip.value){       
         flag = true;
-    }else if(!Email.value){     
+    }
+    
+    if(!Email.value){     
         flag = true;
-    }else if(!Phone.value){      
+    }
+    
+    if(!Phone.value){      
         flag = true;
     }
     
@@ -47,23 +62,33 @@ Form.addEventListener("submit", function(e){
        Name.classList.remove("error")
     })
 
-    Name.addEventListener("change", function(){
-       Name.classList.remove("error")
+    Address1.addEventListener("change", function(){
+       Address1.classList.remove("error")
     })
 
-    Name.addEventListener("change", function(){
-       Name.classList.remove("error")
+    Address2.addEventListener("change", function(){
+       Address2.classList.remove("error")
     })
 
-    Name.addEventListener("change", function(){
-       Name.classList.remove("error")
+    City.addEventListener("change", function(){
+       City.classList.remove("error")
     })
-    Name.addEventListener("change", function(){
-       Name.classList.remove("error")
+    State.addEventListener("change", function(){
+       State.classList.remove("error")
     })
 
-    Name.addEventListener("change", function(){
-       Name.classList.remove("error")
+    Zip.addEventListener("change", function(){
+       Zip.classList.remove("error")
+    })
+
+
+    Phone.addEventListener("change", function(){
+       Phone.classList.remove("error")
+    })
+
+
+    Email.addEventListener("change", function(){
+       Email.classList.remove("error")
     })
 
 
