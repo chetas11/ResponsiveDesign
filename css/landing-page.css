@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  color: blue;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+hr {
+  color: #e5e5e5;
+}
+
+.active {
+  background-color: rgb(19, 106, 236);
+  color: whitesmoke;
+  padding: 0.5% 2%;
+  border-radius: 5px;
+}
+
+.inactive {
+  color: rgb(19, 106, 236);
+  background-color: inherit;
+  border: none;
+  padding: 0% 1%;
+}
+
+.nav-bar h1 {
+  display: inline;
+  margin-right: 55%;
+  font-size: 2rem;
+  color: #a6a6a4;
+}
+
+.signup {
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 1%;
+  width: 150px;
+}
+
+.modal {
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(19, 106, 236);
+  border-radius: 5px;
+  padding: 1%;
+  width: 200px;
+}
+
+.nav-bar {
+  overflow: hidden;
+  padding: 2%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-container {
+  padding: 5% 2%;
+  background-color: #eeeeee;
+}
+
+.left-div {
+  margin-right: 30px;
+}
+
+/* Media Queries for Responsivness */
+
+@media screen and (max-width: 750px) {
+  .nav-bar button {
+    float: none;
+    width: 100%;
+  }
+
+  .nav-bar h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #a6a6a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
